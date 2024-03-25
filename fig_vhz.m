@@ -1,5 +1,5 @@
 %% Speed and torque
-figure(1);
+figure;
 subplot(2, 1, 1); 
 plot(w_M.time, 2*w_M.data, 'b'); hold on; grid on;
 stairs(w_s_ref.time, w_s_ref.data,'r');
@@ -14,7 +14,7 @@ legend('Electromagnetic torque', 'Load torque', 'Location', 'SouthEast');
 xlabel('Time (s)'); ylabel('Torque (Nm)');
 
 %% Voltages and currents
-figure(2);
+figure;
 subplot(2, 1, 1);
 plot(u_ss.time, real(u_ss.data), 'b'); hold on; grid on; 
 stairs(u_ss_ref_lim.time, real(u_ss_ref_lim.data), 'r');
@@ -34,7 +34,7 @@ legend('a', 'b', 'c');
 xlabel('Time (s)'); ylabel('Phase currents (A)');
 
 %% PWM details
-figure(3);
+figure;
 subplot(2, 1, 1); 
 stairs(d_abc.time, d_abc.data(:,1), 'r','linewidth', 1); hold on; grid on;
 stairs(d_abc.time, d_abc.data(:,2), 'g','linewidth', 2);
