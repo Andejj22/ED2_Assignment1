@@ -11,6 +11,10 @@ n_p = 2;            % Number of pole pairs
 J = 0.015;          % Total moment of inertia
 
 %% Control parameters
+t_step = 0.6;       % Load torque step time
+%t_step = 0;
+t_step_speed = 0.3; % Speed step time
+
 T_L = 14.63;        % Load torque step final value
 T_s = 125e-6;       % Sampling period, switching frequency f_sw = 1/(2*T_s)
 alpha_c = 2*pi*300; % Current-control bandwidth
