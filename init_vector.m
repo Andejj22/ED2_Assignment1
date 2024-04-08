@@ -1,10 +1,10 @@
 clear;              % Removes variables from the workspace
 clc;                % Clear the screen
-close all;          % Close the figures
 
 %% Inverse-Gamma model parameters used in the control system
 R_s = 3.7;          % Stator resistance
 R_R = 2.1;          % Rotor resistance
+R_R_actual = R_R;   % Variable for changing the values in task 11
 L_M = 0.224;        % Magnetizing inductance
 L_sigma = 0.021;    % Leakage inductance 
 n_p = 2;            % Number of pole pairs
