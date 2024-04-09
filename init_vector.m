@@ -14,6 +14,7 @@ J = 0.015;          % Total moment of inertia
 t_step = 0.6;       % Load torque step time
 %t_step = 0;
 t_step_speed = 0.3; % Speed step time
+w_m_ref = 2*pi*40; % Electrical speed reference
 
 T_L = 14.63;        % Load torque step final value
 T_s = 125e-6;       % Sampling period, switching frequency f_sw = 1/(2*T_s)

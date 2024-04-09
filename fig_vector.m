@@ -1,5 +1,5 @@
 %% Speed and torque
-figure(1);
+figure;
 subplot(2, 1, 1); 
 plot(w_M.time, n_p*w_M.data, 'b', 'linewidth', 2); hold on; grid on; 
 stairs(w_M_ref.time, n_p*w_M_ref.data, 'r'); 
@@ -13,7 +13,7 @@ legend('Electromagnetic torque', 'Reference', 'Location', 'SouthEast');
 xlabel('Time (s)'); ylabel('Torque (Nm)');
 
 %% Currents
-figure(2);
+figure;
 subplot(2, 1, 1);
 stairs(i_s.time, real(i_s.data), 'b', 'linewidth', 2); hold on; grid on;
 stairs(i_s_ref.time, real(i_s_ref.data), 'r');  
@@ -32,7 +32,7 @@ legend('a-phase', 'b-phase', 'c-phase');
 xlabel('Time (s)'); ylabel('Actual phase currents (A)');
 
 %% Flux linkages
-figure(3);
+figure;
 subplot(2, 1, 1);
 plot(psi_Rs.time, abs(psi_Rs.data), 'b', 'linewidth', 2); hold on; grid on;
 stairs(psi_R_est.time, psi_R_est.data, 'r');  
