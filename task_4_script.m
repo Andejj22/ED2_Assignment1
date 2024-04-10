@@ -11,7 +11,7 @@ u_s_ref = omega_s*psi_s_ref;
 
 i_s_peak = abs(u_s_ref/Z);
 
-figure;
+figure; grid on;
 plot(i_ss.Time, abs(i_ss.Data));
 ylabel("Stator current $i_s^s$", Interpreter="latex");
 xlabel("Time (s)");
